@@ -44,7 +44,7 @@ const HomeTwo = () => {
     const fetchMovies = async () => {
       try {
         const apiKey = '672aa879';
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}`);
         const data = await response.json();
 
         if (data.Search) {
