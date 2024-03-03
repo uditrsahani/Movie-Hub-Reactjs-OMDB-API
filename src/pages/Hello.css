@@ -1,0 +1,17 @@
+.hello-container {
+  overflow: hidden; /* This is important for the sliding animation */
+}
+
+
+
+.hide{
+  opacity: 0;
+}
+.show {
+  opacity: 1; 
+  transform: translateX(0); 
+  color: green;
+  font-weight: bold;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease-in-out, transform 3s ease-in-out;
+}
